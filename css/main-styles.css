@@ -76,6 +76,10 @@
     transition: all .3s;
     border-left: 1px solid black;
   }
+  #content h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
   h1{
     margin: 0 auto;
     font-size: 3rem;
@@ -180,9 +184,6 @@
   .wrapper{
     padding: 0px 40px;
   }
-  
-  
-  
   
   .time-line-block{
     width: calc(50% - 20px);
