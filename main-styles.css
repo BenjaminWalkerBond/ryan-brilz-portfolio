@@ -40,7 +40,6 @@
     scroll-behavior: smooth;
     height: 100%;
     overflow-x: hidden !important;
-    position: absolute;
     
   }
   html, body{
@@ -301,7 +300,57 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
   #content{
     position: relative;
   }
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    
+    opacity:.5;
+    position: absolute;
+    right:-50%;
+    top:0; 
+    z-index:-1;
+  }
   
+  .bg2 {
+    
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+  }
+  
+  .bg3 {
+    
+    animation-duration:5s;
+  }
+  
+  .landing-page-headline {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    padding:10vmin;
+  }
+  .landing-content{
+    padding: 20px 20px;
+  }
+  .landing-page-headline-subcontent {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .landing-page-headline-subcontent a{
+    margin: 0px 5px;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 
   @media screen and (max-width: 992px) {
     nav {
@@ -378,7 +427,7 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
       margin: 0;
     }
     .time-line-block{
-      width:88%;
+      width: 100%;
       background-color: #fff;
       border: 1px solid #ddd;
       margin: 0 0;
@@ -422,54 +471,4 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
   
   
   
-  .bg {
-    animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-    bottom:0;
-    left:-50%;
-    
-    opacity:.5;
-    position: absolute;
-    right:-50%;
-    top:0; 
-    z-index:-1;
-  }
   
-  .bg2 {
-    
-    animation-direction: alternate-reverse;
-    animation-duration: 4s;
-  }
-  
-  .bg3 {
-    
-    animation-duration:5s;
-  }
-  
-  .landing-page-headline {
-    background-color:rgba(255,255,255,.8);
-    border-radius:.25em;
-    box-shadow:0 0 .25em rgba(0,0,0,.25);
-    box-sizing:border-box;
-    padding:10vmin;
-  }
-  .landing-content{
-    padding: 20px 20px;
-  }
-  .landing-page-headline-subcontent {
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-  }
-  .landing-page-headline-subcontent a{
-    margin: 0px 5px;
-  }
-  @keyframes slide {
-    0% {
-      transform:translateX(-25%);
-    }
-    100% {
-      transform:translateX(25%);
-    }
-  }
