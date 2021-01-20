@@ -41,6 +41,12 @@
     overflow-x: hidden !important;
     
   }
+  html, body{
+    overflow-x: hidden !important;
+  }
+  .fix-overflow{
+    overflow: hidden;
+  }
   
   nav {
     display: flex;
