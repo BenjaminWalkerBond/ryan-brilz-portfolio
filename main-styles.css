@@ -180,8 +180,6 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 100vw;
-    height: 100vh;
   }
   .landing-page{
     height: 100vh;
@@ -302,11 +300,10 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
   #content{
     position: relative;
   }
-  .bg {
+  .bg::before {
+    content: " ";
     animation:slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-    background-size: contain;
-    background-clip: content-box;
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -316,14 +313,14 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
     z-index:-1;
   }
   
-  .bg2 {
-    
+  .bg2::before {
+    content: " ";
     animation-direction: alternate-reverse;
     animation-duration: 4s;
   }
   
-  .bg3 {
-    
+  .bg3::before {
+    content: " ";
     animation-duration:5s;
   }
   
@@ -356,7 +353,6 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
   }
 
   @media screen and (max-width: 992px) {
-    
     nav {
       transition: .3s linear;
     }
@@ -377,18 +373,13 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
       margin: 0;
       padding: 0;
     }
+    #about .flex {
+      margin: 0;
+      padding: 0;
+    }
     h1{
       font-size: 2rem;
     }
-    .bg{
-      /* width: 100%;
-      height: 100%; */
-      background-size: 100px;
-      background-clip: content-box;
-    }
-    body {
-      overflow: hidden!important;
-  }
     .landing-page-headline h1{
       padding-left: 0px;
       padding-right: 0px;
