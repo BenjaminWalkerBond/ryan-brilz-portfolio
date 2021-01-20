@@ -12,6 +12,10 @@
   ::selection {
     background-color: #48dbfb;
   }
+  .fix-overflow{
+    position: absolute;
+    overflow: hidden !important;
+  }
   a{
     transition-property: all;
     transition: .1s linear ease-in-out;
@@ -44,9 +48,9 @@
   html, body{
     overflow-x: hidden !important;
   }
-  .fix-overflow{
+  /* .fix-overflow{
     overflow: hidden;
-  }
+  } */
   
   nav {
     display: flex;
@@ -305,7 +309,10 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
     nav {
       transition: .3s linear;
     }
-    
+    .fix-overflow{
+      position: absolute;
+      overflow: hidden !important;
+    }
     nav a {
       display: flex;
       text-decoration: none;
@@ -318,7 +325,7 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
       transition: .3s linear;
       
     }
-    main section .flex{
+    #about{
       margin: 0;
       padding: 0;
     }
@@ -376,7 +383,7 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
       margin: 0;
     }
     .time-line-block{
-      width: calc(100% - 20px);
+      width: 100%;
       background-color: #fff;
       border: 1px solid #ddd;
       margin: 0 0;
