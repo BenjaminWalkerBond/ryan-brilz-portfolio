@@ -432,7 +432,7 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
     bottom:0;
     left:-50%;
-    overflow-x:hidden;
+    overflow:hidden;
     opacity:.5;
     position: absolute;
     right:-50%;
@@ -441,13 +441,13 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
   }
   
   .bg2 {
-    overflow-x:hidden;
+    overflow:hidden;
     animation-direction: alternate-reverse;
     animation-duration: 4s;
   }
   
   .bg3 {
-    overflow-x:hidden;
+    overflow:hidden;
     animation-duration:5s;
   }
   
