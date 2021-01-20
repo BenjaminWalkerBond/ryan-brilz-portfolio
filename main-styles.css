@@ -12,10 +12,7 @@
   ::selection {
     background-color: #48dbfb;
   }
-  .fix-overflow{
-    position: absolute;
-    overflow: hidden !important;
-  }
+  
   a{
     transition-property: all;
     transition: .1s linear ease-in-out;
@@ -43,6 +40,7 @@
     scroll-behavior: smooth;
     height: 100%;
     overflow-x: hidden !important;
+    position: absolute;
     
   }
   html, body{
@@ -309,10 +307,7 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
     nav {
       transition: .3s linear;
     }
-    .fix-overflow{
-      position: absolute;
-      overflow: hidden !important;
-    }
+    
     nav a {
       display: flex;
       text-decoration: none;
@@ -383,7 +378,7 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
       margin: 0;
     }
     .time-line-block{
-      width: 100%;
+      width:88%;
       background-color: #fff;
       border: 1px solid #ddd;
       margin: 0 0;
@@ -432,7 +427,7 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
     bottom:0;
     left:-50%;
-    overflow:hidden;
+    
     opacity:.5;
     position: absolute;
     right:-50%;
@@ -441,13 +436,13 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
   }
   
   .bg2 {
-    overflow:hidden;
+    
     animation-direction: alternate-reverse;
     animation-duration: 4s;
   }
   
   .bg3 {
-    overflow:hidden;
+    
     animation-duration:5s;
   }
   
