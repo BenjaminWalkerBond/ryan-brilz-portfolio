@@ -129,6 +129,9 @@
     height: 400px;
     border-radius: 50%;
   }
+  .container-fluid{
+    overflow-x:hidden;
+  }
   
   .visual-division-line{
     z-index: -999;
