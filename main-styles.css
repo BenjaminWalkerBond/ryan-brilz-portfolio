@@ -353,6 +353,9 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
   }
 
   @media screen and (max-width: 992px) {
+    body {
+      overflow: hidden!important;
+  }
     nav {
       transition: .3s linear;
     }
@@ -377,8 +380,7 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
       font-size: 2rem;
     }
     .bg{
-      background-size: 100vw;
-
+      background-size: 100px;
     }
     .landing-page-headline h1{
       padding-left: 0px;
