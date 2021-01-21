@@ -104,8 +104,6 @@
   }
   p{
     color: var(--color-text-p);
-    text-align: justify;
-    
   }
   footer {
     display: flex;
@@ -124,6 +122,9 @@
   }
   footer .row-flex a img{
     padding-left: 10px;
+  }
+  .about-content p{
+    text-align: justify;
   }
   #ryan-professional{
     background-image: url("images/ryan-professional.png");
