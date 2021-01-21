@@ -195,6 +195,8 @@
   .column-flex{
     display:flex;
     align-items: center;
+    justify-content: center;
+    
   }
   .full-width{
     display: static;
@@ -369,6 +371,13 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
     border-radius: 0.25em;
     padding: 10vmin;
 
+  }
+  .time-line{
+    display: grid;
+    place-items: center;
+  }
+  .about-content{
+    max-width: 800px;
   }
 
   /* .landing-content::before{
