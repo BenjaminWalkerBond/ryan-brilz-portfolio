@@ -175,16 +175,7 @@
   }
   
   
-  .landing-content{
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .landing-page{
-    height: 100vh;
-    display: flex;
-  }
+  
   .main-h1 h1{
     color: #f9f9f9 !important;
   }
@@ -300,40 +291,82 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
   #content{
     position: relative;
   }
+  .oscillating-wrapper{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+  .oscillating-wrapper::after{
+    /* position: absolute;
+    content: "Ryan Brilz";
+    top: 50%;
+    left: 50%;
+    padding: 15vmin; */
+    
+  }
+  .oscillating-wrapper::before{
+    position: absolute;
+    display:flex;
+    content: "Ryan Brilz";
+    font-size: 3rem;
+    background-color:rgba(255,255,255,.8);
+    border-radius: .25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    padding: 15vmin;
+    top: 38%;
+    left: 40%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg, .b2, .bg3{
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    }
   .bg::before {
     content: " ";
-    animation:slide 3s ease-in-out infinite alternate;
+    animation: slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
     bottom:0;
+    top:0; 
+    right:-50%;
     left:-50%;
     opacity:.5;
     position: absolute;
-    right:-50%;
-    top:0; 
+    
     z-index:-1;
   }
-  
   .bg2::before {
+    
     content: " ";
     animation-direction: alternate-reverse;
     animation-duration: 4s;
   }
   
   .bg3::before {
+   
     content: " ";
     animation-duration:5s;
   }
+
+  .landing-content::before{
+    content: " ";
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .landing-page::before{
+    height: 100vh;
+    display: flex;
+  }
   
-  .landing-page-headline {
-    background-color:rgba(255,255,255,.8);
-    border-radius:.25em;
-    box-shadow:0 0 .25em rgba(0,0,0,.25);
-    box-sizing:border-box;
-    padding:10vmin;
-  }
-  .landing-content{
+  /* .landing-content{
     padding: 20px 20px;
-  }
+  } */
   .landing-page-headline-subcontent {
     padding: 5px;
     margin: 5px;
@@ -379,6 +412,21 @@ box-shadow: 3px 6px 10px 0px rgba(0,0,0,0.5);
     }
     h1{
       font-size: 2rem;
+    }
+    .oscillating-wrapper::before{
+      position: absolute;
+      display:flex;
+      content: "Ryan Brilz";
+      font-size: 2rem;
+      background-color:rgba(255,255,255,.8);
+      border-radius: .25em;
+      box-shadow:0 0 .25em rgba(0,0,0,.25);
+      box-sizing:border-box;
+      padding: 15vmin;
+      top: 38%;
+      left: 40%;
+      justify-content: center;
+      align-items: center;
     }
     .landing-page-headline h1{
       padding-left: 0px;
